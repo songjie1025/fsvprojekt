@@ -1,20 +1,40 @@
 package project01;
 
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
-//O.o
+
 public class Histogram {
     int[] frequency;
     int min, max;
+    //min/max:minimale/maximale wert in data
 
+    //hier konstruktor
     public Histogram(List<Integer> data) {
-        // TODO: initialize attributes
+        //erwartet:darstellung min/max wert in data
+        max= Collections.max(data);
+        min=Collections.min(data);
+
+        //the length of frequency should be the amount of unique numbers in data
+        Set<Integer> uniqueSet = new HashSet<>(data);
+        int uniqueCount = uniqueSet.size();
+        frequency = generateRandomArray(uniqueCount);
 
         for (int value : data) {
             // TODO: update frequencies here
             // Hint: look at method count below
         }
+    }
+
+    private static int[] generateRandomArray(int length) {
+        int[] randomArray = new int[length];
+        Random random = new Random();
+
+        for (int i = 0; i < length; i++) {
+            randomArray[i] = random.nextInt();
+        }
+
+        return randomArray;
+
     }
 
     // Note: this constructor is provided as a convenience,
@@ -31,6 +51,7 @@ public class Histogram {
         return max;
     }
 
+    //期待的结果:在eingabe(data)中value出现了几次
     public int count(int value) {
         int index = value - min;
 
