@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8d2423a0-7e97-4c6c-9238-f76af0d33563" name="Changes" comment="testing if commit works">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/project01/RunLength.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project01/RunLength.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/project01/RunLengthTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/project01/RunLengthTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/project01/RunLength.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/project01/RunLength.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/project01/RunLengthTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/project01/RunLengthTests.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -235,7 +234,14 @@
       <option name="project" value="LOCAL" />
       <updated>1700161685422</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="testing if commit works">
+      <created>1700165383547</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1700165383547</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
