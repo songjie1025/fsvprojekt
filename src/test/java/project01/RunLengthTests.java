@@ -29,8 +29,7 @@ public class RunLengthTests {
 
     @Property
     void canDecode(@ForAll List<String> input) {
-        // TODO: check that encoding the input and then decoding the resulting runs
-        //       gives back a list that is equal to the original input
+
         List<Run<String>> encoded = RunLength.encode(input);
         List<String> decoded = RunLength.decode(encoded);
         Assertions.assertEquals(input, decoded);
@@ -38,8 +37,7 @@ public class RunLengthTests {
 
     @Property
     void optimizedSum(@ForAll List<Integer> input) {
-        // TODO: check that the optimized sum method of RunLength computes on the encoding
-        //       the same result as the reference implementation (method sum above) on the given input
+
         List<Run<Integer>> encoded = RunLength.encode(input);
         int optimizedSum = RunLength.sum(encoded);
         int referenceSum = sum(input);

@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8d2423a0-7e97-4c6c-9238-f76af0d33563" name="Changes" comment="altered annotation and added an if-clause for min/max to solveCannotResolveParameterException in histogramCount()">
+    <list default="true" id="8d2423a0-7e97-4c6c-9238-f76af0d33563" name="Changes" comment="testing if commit works">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/project01/Run.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project01/Run.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/project01/RunLength.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project01/RunLength.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/project01/RunLengthTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/project01/RunLengthTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/project01/Run.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/project01/Run.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/project01/RunLength.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/project01/RunLength.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/project01/HistogramTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/project01/HistogramTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/project01/RunLengthTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/project01/RunLengthTests.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,9 +49,9 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.RunLengthTests.example">
-    <configuration name="RunLengthTests" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="project01.RunLengthTests" />
+  <component name="RunManager" selected="Application.RunLengthTests">
+    <configuration name="HistogramTests" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="project01.HistogramTests" />
       <module name="project01" />
       <extension name="coverage">
         <pattern>
@@ -68,7 +63,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HistogramTests.histogramCount (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RunLengthTests" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="project01.RunLengthTests" />
       <module name="project01" />
       <extension name="coverage">
         <pattern>
@@ -76,13 +72,8 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="project01" />
-      <option name="MAIN_CLASS_NAME" value="project01.HistogramTests" />
-      <option name="METHOD_NAME" value="histogramCount(java.util.List,java.lang.Integer)" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
-        <option name="com.soywiz.korge.intellij.UpdateResourceBeforeRunTask" enabled="false" />
       </method>
     </configuration>
     <configuration name="HistogramTests.histogramCount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
@@ -137,11 +128,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.RunLengthTests.example" />
         <item itemvalue="Application.RunLengthTests" />
+        <item itemvalue="Application.HistogramTests" />
+        <item itemvalue="JUnit.RunLengthTests.example" />
         <item itemvalue="JUnit.HistogramTests.histogramRange" />
         <item itemvalue="JUnit.HistogramTests.histogramCount" />
-        <item itemvalue="JUnit.HistogramTests.histogramCount (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -237,7 +228,14 @@
       <option name="project" value="LOCAL" />
       <updated>1700152394312</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="testing if commit works">
+      <created>1700161685422</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1700161685422</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -252,7 +250,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="testing if commit works" />
     <MESSAGE value="initialized attributes in the constructor" />
     <MESSAGE value="submit unversioned files" />
     <MESSAGE value="implemented the update of frequency in for schleife" />
@@ -262,7 +259,8 @@
     <MESSAGE value="fixed one failed assertion + write new assertions for all input from -3 to 10" />
     <MESSAGE value="changed annotation for data and added assumption to fix OutOfMemoryError and NosuchElementException" />
     <MESSAGE value="altered annotation and added an if-clause for min/max to solveCannotResolveParameterException in histogramCount()" />
-    <option name="LAST_COMMIT_MESSAGE" value="altered annotation and added an if-clause for min/max to solveCannotResolveParameterException in histogramCount()" />
+    <MESSAGE value="testing if commit works" />
+    <option name="LAST_COMMIT_MESSAGE" value="testing if commit works" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

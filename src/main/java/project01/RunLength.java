@@ -10,8 +10,7 @@ public class RunLength {
         //     if(input.contains(null))
 
         List<Run<T>> result = new ArrayList<>();
-        
-        // TODO: implement this method
+
         if (input.isEmpty()) return result;
 
         T prev = input.get(0);
@@ -35,7 +34,6 @@ public class RunLength {
     public static <T> List<T> decode(List<Run<T>> runs) {
         List<T> result = new ArrayList<>();
 
-        // TODO: implement this method
         for (Run<T> run : runs) {
             for (int i = 0; i < run.count(); i++) {
                 result.add(run.elem());
@@ -46,7 +44,7 @@ public class RunLength {
     }
 
     public static Integer sum(List<Run<Integer>> runs) {
-        // TODO: implement this method (you may peek)
+
         int totalSum = 0;
         for (Run<Integer> run : runs) {
             totalSum += run.count() * run.elem();
