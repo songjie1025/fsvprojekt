@@ -2,14 +2,12 @@ package project01;
 
 import java.util.List;
 
-import net.jqwik.api.ForAll;
+import net.jqwik.api.*;
 import net.jqwik.api.constraints.IntRange;
 import net.jqwik.api.constraints.Positive;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Assumptions;
 import org.junit.jupiter.api.Test;
-
-import net.jqwik.api.Property;
 
 public class HistogramTests {
     // Note: this method can be used to run the unit test without a test framework (e.g. to debug)
@@ -50,10 +48,11 @@ public class HistogramTests {
     }
 
     @Property
-    void histogramCount(@ForAll List<Integer> data, @ForAll int value)
-    {
-        Assertions.assertEquals(new Histogram(data).count(value),countOccurrences(value,data));
+    void histogramCount(@ForAll List<@IntRange(min=10,max=100) Integer> data,@ForAll @IntRange(min=10, max=100) Integer value) {
+        Assertions.assertEquals(new Histogram(data).count(value), countOccurrences(value, data));
     }
+
+
 
     @Property
     void histogramRange(@ForAll List<Integer> data, @ForAll int value) {

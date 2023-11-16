@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8d2423a0-7e97-4c6c-9238-f76af0d33563" name="Changes" comment="fixed one failed assertion + write new assertions for all input from -3 to 10">
+    <list default="true" id="8d2423a0-7e97-4c6c-9238-f76af0d33563" name="Changes" comment="changed annotation for data and added assumption to fix OutOfMemoryError and NosuchElementException">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/project01/Histogram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project01/Histogram.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/project01/HistogramTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/project01/HistogramTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/project01/Histogram.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/project01/Histogram.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/project01/HistogramTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/project01/HistogramTests.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,21 +51,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.HistogramTests.histogramDoesNotCrash">
-    <configuration name="HistogramTests" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="project01.HistogramTests" />
-      <module name="project01" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="project01.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-        <option name="com.soywiz.korge.intellij.UpdateResourceBeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.HistogramTests.histogramCount (1)">
     <configuration name="HistogramTests.example" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="project01" />
       <extension name="coverage">
@@ -75,6 +63,40 @@
       <option name="PACKAGE_NAME" value="project01" />
       <option name="MAIN_CLASS_NAME" value="project01.HistogramTests" />
       <option name="METHOD_NAME" value="example" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="com.soywiz.korge.intellij.UpdateResourceBeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration name="HistogramTests.histogramCount (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="project01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="project01.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="project01" />
+      <option name="MAIN_CLASS_NAME" value="project01.HistogramTests" />
+      <option name="METHOD_NAME" value="histogramCount(java.util.List,java.lang.Integer)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="com.soywiz.korge.intellij.UpdateResourceBeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration name="HistogramTests.histogramCount (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="project01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="project01.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="project01" />
+      <option name="MAIN_CLASS_NAME" value="project01.HistogramTests" />
+      <option name="METHOD_NAME" value="histogramCount(java.util.List)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -115,30 +137,13 @@
         <option name="com.soywiz.korge.intellij.UpdateResourceBeforeRunTask" enabled="false" />
       </method>
     </configuration>
-    <configuration name="HistogramTests.histogramRange" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="project01" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="project01.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="project01" />
-      <option name="MAIN_CLASS_NAME" value="project01.HistogramTests" />
-      <option name="METHOD_NAME" value="histogramRange(java.util.List,int)" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-        <option name="com.soywiz.korge.intellij.UpdateResourceBeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.HistogramTests.histogramDoesNotCrash" />
+        <item itemvalue="JUnit.HistogramTests.histogramCount (1)" />
+        <item itemvalue="JUnit.HistogramTests.histogramCount (2)" />
         <item itemvalue="JUnit.HistogramTests.histogramCount" />
+        <item itemvalue="JUnit.HistogramTests.histogramDoesNotCrash" />
         <item itemvalue="JUnit.HistogramTests.example" />
-        <item itemvalue="Application.HistogramTests" />
-        <item itemvalue="JUnit.HistogramTests.histogramRange" />
       </list>
     </recent_temporary>
   </component>
@@ -155,7 +160,7 @@
       <workItem from="1699916805473" duration="159000" />
       <workItem from="1699977198510" duration="788000" />
       <workItem from="1700125329161" duration="5154000" />
-      <workItem from="1700136122408" duration="5882000" />
+      <workItem from="1700136122408" duration="7578000" />
     </task>
     <task id="LOCAL-00001" summary="testing if commit works">
       <created>1699911214865</created>
@@ -220,7 +225,14 @@
       <option name="project" value="LOCAL" />
       <updated>1700149759887</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="changed annotation for data and added assumption to fix OutOfMemoryError and NosuchElementException">
+      <created>1700150656116</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1700150656116</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -243,14 +255,15 @@
     <MESSAGE value="rewrite frequency code based on the errors in test results" />
     <MESSAGE value="rewrite frequency as [min,min+1,..,max-1,max] based on failed fore-given assertion in example and implementation of count()" />
     <MESSAGE value="fixed one failed assertion + write new assertions for all input from -3 to 10" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed one failed assertion + write new assertions for all input from -3 to 10" />
+    <MESSAGE value="changed annotation for data and added assumption to fix OutOfMemoryError and NosuchElementException" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed annotation for data and added assumption to fix OutOfMemoryError and NosuchElementException" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/project01/HistogramTests.java</url>
-          <line>15</line>
+          <line>13</line>
           <properties class="project01.HistogramTests" method="main">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
@@ -259,16 +272,16 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/project01/HistogramTests.java</url>
-          <line>52</line>
+          <line>50</line>
           <properties class="project01.HistogramTests" method="histogramCount">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
-          <option name="timeStamp" value="3" />
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/project01/HistogramTests.java</url>
-          <line>28</line>
+          <line>26</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">

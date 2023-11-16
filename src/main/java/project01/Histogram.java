@@ -11,8 +11,12 @@ public class Histogram {
     //hier konstruktor
     public Histogram(List<Integer> data) {
         //erwartet:darstellung min/max wert in data
-        max = Collections.max(data);
-        min = Collections.min(data);
+        //need to ensure date is not empty otherwise we have CannotResolveParameterException in property base test
+        if (!data.isEmpty()) {
+            max = Collections.max(data);
+            min = Collections.min(data);
+        }
+
 
         //frequency=[min,min+1,min+2,...,max-1,max]
         frequency = generateNullArray(max - min + 1);
