@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8d2423a0-7e97-4c6c-9238-f76af0d33563" name="Changes" comment="rewrite frequency as [min,min+1,..,max-1,max] based on failed fore-given assertion in example and implementation of count()">
-      <change beforePath="$PROJECT_DIR$/src/test/java/project01/HistogramTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/project01/HistogramTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/project01/Histogram.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/project01/Histogram.class" afterDir="false" />
+    <list default="true" id="8d2423a0-7e97-4c6c-9238-f76af0d33563" name="Changes" comment="fixed one failed assertion + write new assertions for all input from -3 to 10">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/project01/HistogramTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/project01/HistogramTests.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +48,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.HistogramTests.example">
+  <component name="RunManager" selected="JUnit.HistogramTests.histogramDoesNotCrash">
     <configuration name="HistogramTests" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="project01.HistogramTests" />
       <module name="project01" />
@@ -133,11 +133,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.HistogramTests.histogramDoesNotCrash" />
         <item itemvalue="JUnit.HistogramTests.example" />
         <item itemvalue="Application.HistogramTests" />
         <item itemvalue="JUnit.HistogramTests.histogramRange" />
         <item itemvalue="JUnit.HistogramTests.histogramCount" />
-        <item itemvalue="JUnit.HistogramTests.histogramDoesNotCrash" />
       </list>
     </recent_temporary>
   </component>
@@ -154,7 +154,7 @@
       <workItem from="1699916805473" duration="159000" />
       <workItem from="1699977198510" duration="788000" />
       <workItem from="1700125329161" duration="5154000" />
-      <workItem from="1700136122408" duration="4630000" />
+      <workItem from="1700136122408" duration="4932000" />
     </task>
     <task id="LOCAL-00001" summary="testing if commit works">
       <created>1699911214865</created>
@@ -205,7 +205,14 @@
       <option name="project" value="LOCAL" />
       <updated>1700149113682</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="fixed one failed assertion + write new assertions for all input from -3 to 10">
+      <created>1700149492927</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1700149492927</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -227,7 +234,8 @@
     <MESSAGE value="added annotations for parameters and assertions in the methods" />
     <MESSAGE value="rewrite frequency code based on the errors in test results" />
     <MESSAGE value="rewrite frequency as [min,min+1,..,max-1,max] based on failed fore-given assertion in example and implementation of count()" />
-    <option name="LAST_COMMIT_MESSAGE" value="rewrite frequency as [min,min+1,..,max-1,max] based on failed fore-given assertion in example and implementation of count()" />
+    <MESSAGE value="fixed one failed assertion + write new assertions for all input from -3 to 10" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed one failed assertion + write new assertions for all input from -3 to 10" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
