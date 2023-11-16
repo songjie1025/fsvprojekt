@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8d2423a0-7e97-4c6c-9238-f76af0d33563" name="Changes" comment="changed annotation for data and added assumption to fix OutOfMemoryError and NosuchElementException">
+    <list default="true" id="8d2423a0-7e97-4c6c-9238-f76af0d33563" name="Changes" comment="altered annotation and added an if-clause for min/max to solveCannotResolveParameterException in histogramCount()">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/project01/Histogram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project01/Histogram.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/project01/HistogramTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/project01/HistogramTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/project01/Histogram.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/project01/Histogram.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/project01/HistogramTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/project01/HistogramTests.class" afterDir="false" />
@@ -51,24 +50,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.HistogramTests.histogramCount (1)">
-    <configuration name="HistogramTests.example" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="project01" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="project01.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="project01" />
-      <option name="MAIN_CLASS_NAME" value="project01.HistogramTests" />
-      <option name="METHOD_NAME" value="example" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-        <option name="com.soywiz.korge.intellij.UpdateResourceBeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.HistogramTests.histogramRange">
     <configuration name="HistogramTests.histogramCount (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="project01" />
       <extension name="coverage">
@@ -137,13 +119,30 @@
         <option name="com.soywiz.korge.intellij.UpdateResourceBeforeRunTask" enabled="false" />
       </method>
     </configuration>
+    <configuration name="HistogramTests.histogramRange" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="project01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="project01.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="project01" />
+      <option name="MAIN_CLASS_NAME" value="project01.HistogramTests" />
+      <option name="METHOD_NAME" value="histogramRange(java.util.List,int)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="com.soywiz.korge.intellij.UpdateResourceBeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.HistogramTests.histogramRange" />
+        <item itemvalue="JUnit.HistogramTests.histogramCount" />
         <item itemvalue="JUnit.HistogramTests.histogramCount (1)" />
         <item itemvalue="JUnit.HistogramTests.histogramCount (2)" />
-        <item itemvalue="JUnit.HistogramTests.histogramCount" />
         <item itemvalue="JUnit.HistogramTests.histogramDoesNotCrash" />
-        <item itemvalue="JUnit.HistogramTests.example" />
       </list>
     </recent_temporary>
   </component>
@@ -160,7 +159,7 @@
       <workItem from="1699916805473" duration="159000" />
       <workItem from="1699977198510" duration="788000" />
       <workItem from="1700125329161" duration="5154000" />
-      <workItem from="1700136122408" duration="7578000" />
+      <workItem from="1700136122408" duration="9385000" />
     </task>
     <task id="LOCAL-00001" summary="testing if commit works">
       <created>1699911214865</created>
@@ -232,7 +231,14 @@
       <option name="project" value="LOCAL" />
       <updated>1700150656116</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="altered annotation and added an if-clause for min/max to solveCannotResolveParameterException in histogramCount()">
+      <created>1700152394312</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1700152394312</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -256,7 +262,8 @@
     <MESSAGE value="rewrite frequency as [min,min+1,..,max-1,max] based on failed fore-given assertion in example and implementation of count()" />
     <MESSAGE value="fixed one failed assertion + write new assertions for all input from -3 to 10" />
     <MESSAGE value="changed annotation for data and added assumption to fix OutOfMemoryError and NosuchElementException" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed annotation for data and added assumption to fix OutOfMemoryError and NosuchElementException" />
+    <MESSAGE value="altered annotation and added an if-clause for min/max to solveCannotResolveParameterException in histogramCount()" />
+    <option name="LAST_COMMIT_MESSAGE" value="altered annotation and added an if-clause for min/max to solveCannotResolveParameterException in histogramCount()" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
