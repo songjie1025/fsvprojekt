@@ -17,23 +17,22 @@ public class Histogram {
         //the length of frequency should be the amount of unique numbers in data
         Set<Integer> uniqueSet = new HashSet<>(data);
         int uniqueCount = uniqueSet.size();
-        frequency = generateRandomArray(uniqueCount);
+        frequency = generateNullArray(uniqueCount);
 
         for (int value : data) {
-            // TODO: update frequencies here
-            // Hint: look at method count below
+            int IndexOfValue = value - min;
+            frequency[IndexOfValue]++;
         }
     }
 
-    private static int[] generateRandomArray(int length) {
-        int[] randomArray = new int[length];
-        Random random = new Random();
+    private static int[] generateNullArray(int length) {
+        int[] NullArray = new int[length];
 
         for (int i = 0; i < length; i++) {
-            randomArray[i] = random.nextInt();
+            NullArray[i] = 0;
         }
 
-        return randomArray;
+        return NullArray;
 
     }
 
@@ -54,9 +53,10 @@ public class Histogram {
     //期待的结果:在eingabe(data)中value出现了几次
     public int count(int value) {
         int index = value - min;
+        //因为在histogram中的位置要从小到大(左->右)
 
-        if (0 <= index && index < frequency.length)
-            return frequency[index];
+        if (0 <= index && index < frequency.length) //筛选出有效index
+            return frequency[index]; //也就是return value在data中出现的次数(frequency)
         else
             return 0;
     }
