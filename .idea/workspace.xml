@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8d2423a0-7e97-4c6c-9238-f76af0d33563" name="Changes" comment="testing if commit works">
+    <list default="true" id="8d2423a0-7e97-4c6c-9238-f76af0d33563" name="Changes" comment="implemented the update of frequency in for schleife">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/project01/Histogram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project01/Histogram.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/project01/HistogramTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/project01/HistogramTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/project01/Histogram.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/project01/Histogram.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/project01/HistogramTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/project01/HistogramTests.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +105,14 @@
       <option name="project" value="LOCAL" />
       <updated>1700092864840</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="implemented the update of frequency in for schleife">
+      <created>1700094159064</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1700094159064</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -121,14 +130,15 @@
     <MESSAGE value="testing if commit works" />
     <MESSAGE value="initialized attributes in the constructor" />
     <MESSAGE value="submit unversioned files" />
-    <option name="LAST_COMMIT_MESSAGE" value="submit unversioned files" />
+    <MESSAGE value="implemented the update of frequency in for schleife" />
+    <option name="LAST_COMMIT_MESSAGE" value="implemented the update of frequency in for schleife" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/project01/HistogramTests.java</url>
-          <line>11</line>
+          <line>14</line>
           <properties class="project01.HistogramTests" method="main">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
