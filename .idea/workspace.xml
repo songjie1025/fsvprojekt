@@ -6,9 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="8d2423a0-7e97-4c6c-9238-f76af0d33563" name="Changes" comment="altered annotation and added an if-clause for min/max to solveCannotResolveParameterException in histogramCount()">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/project01/HistogramTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/project01/HistogramTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/project01/Histogram.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/project01/Histogram.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/project01/Run.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project01/Run.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/project01/RunLength.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project01/RunLength.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/project01/RunLengthTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/project01/RunLengthTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/project01/Run.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/project01/Run.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/project01/RunLength.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/project01/RunLength.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/project01/HistogramTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/project01/HistogramTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/project01/RunLengthTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/project01/RunLengthTests.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +54,20 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.HistogramTests.histogramRange">
+  <component name="RunManager" selected="JUnit.RunLengthTests.example">
+    <configuration name="RunLengthTests" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="project01.RunLengthTests" />
+      <module name="project01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="project01.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="HistogramTests.histogramCount (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="project01" />
       <extension name="coverage">
@@ -62,23 +79,6 @@
       <option name="PACKAGE_NAME" value="project01" />
       <option name="MAIN_CLASS_NAME" value="project01.HistogramTests" />
       <option name="METHOD_NAME" value="histogramCount(java.util.List,java.lang.Integer)" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-        <option name="com.soywiz.korge.intellij.UpdateResourceBeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
-    <configuration name="HistogramTests.histogramCount (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="project01" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="project01.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="project01" />
-      <option name="MAIN_CLASS_NAME" value="project01.HistogramTests" />
-      <option name="METHOD_NAME" value="histogramCount(java.util.List)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -102,23 +102,6 @@
         <option name="com.soywiz.korge.intellij.UpdateResourceBeforeRunTask" enabled="false" />
       </method>
     </configuration>
-    <configuration name="HistogramTests.histogramDoesNotCrash" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="project01" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="project01.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="project01" />
-      <option name="MAIN_CLASS_NAME" value="project01.HistogramTests" />
-      <option name="METHOD_NAME" value="histogramDoesNotCrash(java.util.List)" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-        <option name="com.soywiz.korge.intellij.UpdateResourceBeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
     <configuration name="HistogramTests.histogramRange" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="project01" />
       <extension name="coverage">
@@ -136,13 +119,29 @@
         <option name="com.soywiz.korge.intellij.UpdateResourceBeforeRunTask" enabled="false" />
       </method>
     </configuration>
+    <configuration name="RunLengthTests.example" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="project01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="project01.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="project01" />
+      <option name="MAIN_CLASS_NAME" value="project01.RunLengthTests" />
+      <option name="METHOD_NAME" value="example" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RunLengthTests.example" />
+        <item itemvalue="Application.RunLengthTests" />
         <item itemvalue="JUnit.HistogramTests.histogramRange" />
         <item itemvalue="JUnit.HistogramTests.histogramCount" />
         <item itemvalue="JUnit.HistogramTests.histogramCount (1)" />
-        <item itemvalue="JUnit.HistogramTests.histogramCount (2)" />
-        <item itemvalue="JUnit.HistogramTests.histogramDoesNotCrash" />
       </list>
     </recent_temporary>
   </component>

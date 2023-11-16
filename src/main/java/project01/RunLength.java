@@ -12,6 +12,22 @@ public class RunLength {
         List<Run<T>> result = new ArrayList<>();
         
         // TODO: implement this method
+        if (input.isEmpty()) return result;
+
+        T prev = input.get(0);
+        int count = 1;
+
+        for (int i = 1; i < input.size(); i++) {
+            T current = input.get(i);
+            if (current.equals(prev)) {
+                count++;
+            } else {
+                result.add(new Run<>(count, prev));
+                count = 1;
+                prev = current;
+            }
+        }
+        result.add(new Run<>(count, prev));
 
         return result;
     }
@@ -20,13 +36,21 @@ public class RunLength {
         List<T> result = new ArrayList<>();
 
         // TODO: implement this method
+        for (Run<T> run : runs) {
+            for (int i = 0; i < run.count(); i++) {
+                result.add(run.elem());
+            }
+        }
 
         return result;
     }
 
     public static Integer sum(List<Run<Integer>> runs) {
         // TODO: implement this method (you may peek)
-
-        return 0;
+        int totalSum = 0;
+        for (Run<Integer> run : runs) {
+            totalSum += run.count() * run.elem();
+        }
+        return totalSum;
     }
 }
