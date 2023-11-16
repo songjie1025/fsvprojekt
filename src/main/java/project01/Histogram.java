@@ -11,40 +11,17 @@ public class Histogram {
     //hier konstruktor
     public Histogram(List<Integer> data) {
         //erwartet:darstellung min/max wert in data
-        max= Collections.max(data);
-        min=Collections.min(data);
+        max = Collections.max(data);
+        min = Collections.min(data);
 
-        //the length of frequency should be the amount of unique numbers in data.
-        // Initalize frequency with an array with that length,with value full of 0s
-        /**
-         * steps:1.turn data into arraylist
-         * 2.create uniqueElemArrayList to store unique members of data
-         * 3.for each elem in data: uniqueAL iterieren,add if not contained in it
-         * 4.use size() to get its length
-         */
-
-        ArrayList<Integer> ArraylistFromData =  new ArrayList<>(data); //1.
-
-        ArrayList<Integer> UniqueElemArrayList = new ArrayList<>(); //2.
-
-        for (int element:ArraylistFromData){
-            if(!contains(element,UniqueElemArrayList)){
-                UniqueElemArrayList.add(element);
-            }
-        }
-
-        int lengthOfFrequency = UniqueElemArrayList.size();
-
-        frequency = generateNullArray(lengthOfFrequency);
+        //frequency=[min,min+1,min+2,...,max-1,max]
+        frequency = generateNullArray(max - min + 1);
 
         for (int value : data) {
             //we are looking for IndexOfValue in histogram then we run frequency[IndexOfValue]++;
-            //IndexOfValue in histogram = IndexOfValue in uniqueElemArray defined above
 
-            Collections.sort(UniqueElemArrayList);
-            int IndexOfValue = UniqueElemArrayList.indexOf(value);
-
-            frequency[IndexOfValue]++;
+            int index = value - min;
+            frequency[index]++;
         }
     }
 
@@ -86,7 +63,7 @@ public class Histogram {
     //期待的结果:在eingabe(data)中value出现了几次
     public int count(int value) {
         int index = value - min;
-        //因为在histogram中的位置要从小到大(左->右)
+        //[min,min+1,...,max-1,max]
 
         if (0 <= index && index < frequency.length) //筛选出有效index
             return frequency[index]; //也就是return value在data中出现的次数(frequency)
