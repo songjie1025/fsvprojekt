@@ -22,12 +22,20 @@ public class HistogramTests {
         Histogram histogram = new Histogram(2, 3, 0, 5, 5, 6, -2, 9, 0, 3, 5);
         Assertions.assertEquals(-2, histogram.min());
         Assertions.assertEquals(9, histogram.max());
-        Assertions.assertTrue(3>histogram.min());
+        //complete assertion for all input from -3 to 10 like asked in A1.2-2
+        Assertions.assertEquals(0,histogram.count(-1));
 
         Assertions.assertEquals(2, histogram.count(0));
         Assertions.assertEquals(0, histogram.count(1));
         Assertions.assertEquals(1, histogram.count(2));
-        Assertions.assertEquals(2,histogram.count(5));
+        Assertions.assertEquals(2,histogram.count(3));
+        Assertions.assertEquals(0,histogram.count(4));
+        Assertions.assertEquals(3,histogram.count(5));
+        Assertions.assertEquals(1,histogram.count(6));
+        Assertions.assertEquals(0,histogram.count(7));
+        Assertions.assertEquals(0,histogram.count(8));
+        Assertions.assertEquals(1,histogram.count(9));
+        Assertions.assertEquals(0,histogram.count(10));
     }
 
     int countOccurrences(int value, List<Integer> data) {

@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8d2423a0-7e97-4c6c-9238-f76af0d33563" name="Changes" comment="rewrite frequency code based on the errors in test results">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/project01/Histogram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project01/Histogram.java" afterDir="false" />
+    <list default="true" id="8d2423a0-7e97-4c6c-9238-f76af0d33563" name="Changes" comment="rewrite frequency as [min,min+1,..,max-1,max] based on failed fore-given assertion in example and implementation of count()">
+      <change beforePath="$PROJECT_DIR$/src/test/java/project01/HistogramTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/project01/HistogramTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/project01/Histogram.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/project01/Histogram.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -155,7 +154,7 @@
       <workItem from="1699916805473" duration="159000" />
       <workItem from="1699977198510" duration="788000" />
       <workItem from="1700125329161" duration="5154000" />
-      <workItem from="1700136122408" duration="4320000" />
+      <workItem from="1700136122408" duration="4630000" />
     </task>
     <task id="LOCAL-00001" summary="testing if commit works">
       <created>1699911214865</created>
@@ -199,7 +198,14 @@
       <option name="project" value="LOCAL" />
       <updated>1700130776569</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="rewrite frequency as [min,min+1,..,max-1,max] based on failed fore-given assertion in example and implementation of count()">
+      <created>1700149113682</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1700149113682</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -220,7 +226,8 @@
     <MESSAGE value="implemented the update of frequency in for schleife" />
     <MESSAGE value="added annotations for parameters and assertions in the methods" />
     <MESSAGE value="rewrite frequency code based on the errors in test results" />
-    <option name="LAST_COMMIT_MESSAGE" value="rewrite frequency code based on the errors in test results" />
+    <MESSAGE value="rewrite frequency as [min,min+1,..,max-1,max] based on failed fore-given assertion in example and implementation of count()" />
+    <option name="LAST_COMMIT_MESSAGE" value="rewrite frequency as [min,min+1,..,max-1,max] based on failed fore-given assertion in example and implementation of count()" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -236,7 +243,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/project01/HistogramTests.java</url>
-          <line>26</line>
+          <line>27</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
