@@ -6,6 +6,7 @@ import net.jqwik.api.ForAll;
 import net.jqwik.api.constraints.IntRange;
 import net.jqwik.api.constraints.Positive;
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Assumptions;
 import org.junit.jupiter.api.Test;
 
 import net.jqwik.api.Property;
@@ -43,18 +44,19 @@ public class HistogramTests {
     }
 
     @Property //
-    void histogramDoesNotCrash(@ForAll List<@Positive Integer> data) {
+    void histogramDoesNotCrash(@ForAll List<@IntRange(min=-10,max=10) Integer> data) {
+        Assumptions.assumeTrue(!data.isEmpty()); //to ensure data is not empty,otherwise we have NosuchElementException
         new Histogram(data);
     }
 
-    @Property // correspnds to A2-2 to value from -3 to 10
-    void histogramCount(@ForAll List<@IntRange(min=-3,max=10) Integer> data, @ForAll @IntRange(min=-3,max=10) int value)
+    @Property
+    void histogramCount(@ForAll List<Integer> data, @ForAll int value)
     {
         Assertions.assertEquals(new Histogram(data).count(value),countOccurrences(value,data));
     }
 
     @Property
-    void histogramRange(@ForAll List<@IntRange(min=-3,max=10) Integer> data, @ForAll @IntRange(min=-3,max=10) int value) {
+    void histogramRange(@ForAll List<Integer> data, @ForAll int value) {
         Assertions.assertTrue(countOccurrences(value,data)>0);
         Assertions.assertTrue(value <= new Histogram(data).max );
         Assertions.assertTrue(value >= new Histogram(data).min);

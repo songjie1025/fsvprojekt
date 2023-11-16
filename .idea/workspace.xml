@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8d2423a0-7e97-4c6c-9238-f76af0d33563" name="Changes" comment="fixed one failed assertion + write new assertions for all input from -3 to 10">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/project01/HistogramTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/project01/HistogramTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/project01/HistogramTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/project01/HistogramTests.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -134,10 +135,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.HistogramTests.histogramDoesNotCrash" />
+        <item itemvalue="JUnit.HistogramTests.histogramCount" />
         <item itemvalue="JUnit.HistogramTests.example" />
         <item itemvalue="Application.HistogramTests" />
         <item itemvalue="JUnit.HistogramTests.histogramRange" />
-        <item itemvalue="JUnit.HistogramTests.histogramCount" />
       </list>
     </recent_temporary>
   </component>
@@ -154,7 +155,7 @@
       <workItem from="1699916805473" duration="159000" />
       <workItem from="1699977198510" duration="788000" />
       <workItem from="1700125329161" duration="5154000" />
-      <workItem from="1700136122408" duration="4932000" />
+      <workItem from="1700136122408" duration="5882000" />
     </task>
     <task id="LOCAL-00001" summary="testing if commit works">
       <created>1699911214865</created>
@@ -212,7 +213,14 @@
       <option name="project" value="LOCAL" />
       <updated>1700149492927</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="fixed one failed assertion + write new assertions for all input from -3 to 10">
+      <created>1700149759887</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1700149759887</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -242,18 +250,31 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/project01/HistogramTests.java</url>
-          <line>14</line>
+          <line>15</line>
           <properties class="project01.HistogramTests" method="main">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/project01/HistogramTests.java</url>
+          <line>52</line>
+          <properties class="project01.HistogramTests" method="histogramCount">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/project01/HistogramTests.java</url>
-          <line>27</line>
+          <line>28</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.OutOfMemoryError" package="java.lang" />
+          <option name="timeStamp" value="4" />
+        </breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
