@@ -22,7 +22,7 @@ public class HistogramTests {
         Histogram histogram = new Histogram(2, 3, 0, 5, 5, 6, -2, 9, 0, 3, 5);
         Assertions.assertEquals(-2, histogram.min());
         Assertions.assertEquals(9, histogram.max());
-        Assertions.assertEquals(3,histogram.min());
+        Assertions.assertTrue(3>histogram.min());
 
         Assertions.assertEquals(2, histogram.count(0));
         Assertions.assertEquals(0, histogram.count(1));

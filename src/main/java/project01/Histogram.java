@@ -14,15 +14,48 @@ public class Histogram {
         max= Collections.max(data);
         min=Collections.min(data);
 
-        //the length of frequency should be the amount of unique numbers in data
-        Set<Integer> uniqueSet = new HashSet<>(data);
-        int uniqueCount = uniqueSet.size();
-        frequency = generateNullArray(uniqueCount);
+        //the length of frequency should be the amount of unique numbers in data.
+        // Initalize frequency with an array with that length,with value full of 0s
+        /**
+         * steps:1.turn data into arraylist
+         * 2.create uniqueElemArrayList to store unique members of data
+         * 3.for each elem in data: uniqueAL iterieren,add if not contained in it
+         * 4.use size() to get its length
+         */
+
+        ArrayList<Integer> ArraylistFromData =  new ArrayList<>(data); //1.
+
+        ArrayList<Integer> UniqueElemArrayList = new ArrayList<>(); //2.
+
+        for (int element:ArraylistFromData){
+            if(!contains(element,UniqueElemArrayList)){
+                UniqueElemArrayList.add(element);
+            }
+        }
+
+        int lengthOfFrequency = UniqueElemArrayList.size();
+
+        frequency = generateNullArray(lengthOfFrequency);
 
         for (int value : data) {
-            int IndexOfValue = value - min;
+            //we are looking for IndexOfValue in histogram then we run frequency[IndexOfValue]++;
+            //IndexOfValue in histogram = IndexOfValue in uniqueElemArray defined above
+
+            Collections.sort(UniqueElemArrayList);
+            int IndexOfValue = UniqueElemArrayList.indexOf(value);
+
             frequency[IndexOfValue]++;
         }
+    }
+
+    private boolean contains(int target, ArrayList<Integer> array) {
+        for (int num : array) {
+            if (num == target) {
+                return true;
+            }
+        }
+        return false;
+
     }
 
     private static int[] generateNullArray(int length) {
